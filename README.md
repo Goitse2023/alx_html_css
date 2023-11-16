@@ -1,0 +1,2 @@
+The title of this project is HTML, advanced
+Project Description: This project seeks to  create from scratch an HTML page from a wireframe/designer file. It will focus on the HTML structure only-Pure HTML Semantics.
