@@ -61,7 +61,11 @@
   
     /** HEADER **/
     --header-padding: 4rem 0 0;
-   
+    --header-logo-position: relative;
+    --header-logo-link-display: inline-block;
+    --header-logo-link-position: absolute;
+    --header-logo-link-top: -1rem;
+    --header-logo-link-left: 0;
   
     /** FOOTER **/
     --footer-padding: 5rem 0 1rem;
@@ -204,9 +208,12 @@
   /* Navbar
       ============================= */
   
-  
+  .navbar-menu {
+    float: right;
+  }
   
   .nav {
+    display: flex;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -218,8 +225,7 @@
     font-weight: var(--nav-item-font-weight);
     font-size: var(--nav-item-font-size);
     letter-spacing: var(--nav-item-letter-spacing);
-    display: var(--nav-item-display);
-    margin: var(--nav-item-margin);
+    margin: var(-0 0 0 2rem);
   }
   
   .nav .nav-link {
@@ -251,10 +257,7 @@
   
   /* Header
       ============================= */
-  .header-container {
-    display: flex;
-    justify-content: space-between;
-  }
+  
   .header {
     padding: var(--header-padding);
          position: relative;
@@ -262,7 +265,16 @@
          background: transparent;
   }
   
+  .header-logo {
+    position: var(--header-logo-position);
+  }
   
+  .header-logo a {
+    display: var(--header-logo-link-display);
+    position: var(--header-logo-link-position);
+    top: var(--header-logo-link-top);
+    left: var(--header-logo-link-left);
+  }
   
   /* Footer
       ============================= */
